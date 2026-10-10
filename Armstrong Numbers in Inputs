@@ -1,0 +1,11 @@
+N = int(input())
+for i in range(1, N + 1):
+    M = input()
+    P = len(M)
+    T = int(M)
+    sum = 0
+    for j in range(P):
+        S = int(M[j]) 
+        sum += S ** P
+    if sum == T:
+        print(T)
