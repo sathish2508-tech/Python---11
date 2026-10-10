@@ -1,0 +1,10 @@
+N = int(input())
+k = 1
+for i in range(N):
+    for j in range(N-i):
+        if(i == 0 or j == 0 or j == N-i-1):
+            print(str(k),end=" ")
+        else:
+            print(" ",end=" ")
+        k += 1 
+    print()
