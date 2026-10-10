@@ -1,0 +1,9 @@
+sentance = input()
+word = 0
+for char in sentance:
+    if char == " ":
+        break
+    else:
+        word += 1 
+first = sentance[:word]
+print(first)
