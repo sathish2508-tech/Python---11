@@ -1,0 +1,17 @@
+M = int(input())
+N = int(input())
+for i in range(M):
+    if i == 0:
+        row = ""
+        for j in range(M):
+            row += str(N+j) + " "
+    elif i == M-1:
+        space = " " * (i)
+        row = ""
+        row += space + str(N) + " "
+    else:
+        space = " " * (i)
+        hspace = " " * 2*(M-i-2)
+        row = ""
+        row += space + str(N) + " " + hspace + str(M+N-i-1) + " "
+    print(row)
