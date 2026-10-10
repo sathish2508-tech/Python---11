@@ -1,0 +1,17 @@
+M = int(input())
+N = int(input())
+k = M 
+for i in range(N):
+    row = ""
+    space = " " * (i)
+    for j in range(N-i):
+        if (i == 0 or i == N-1):
+            row += str(k) + " "
+        else:
+            if (j == 0 or j == N-i-1):
+                row += str(k) + " "
+            else:
+                row += "  "
+        k += 1 
+    print(space+row.rstrip())   
+
