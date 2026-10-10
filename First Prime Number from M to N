@@ -1,0 +1,17 @@
+M = int(input())
+N = int(input())
+found = False
+for i in range(M, N + 1):
+    if i < 2:
+        continue
+    prime = False
+    for j in range(2, i):
+        if i%j == 0:
+            prime = True
+            break
+    if not prime:
+        print(i)
+        found = True
+        break
+if not found:
+    print("No prime numbers in the given range")
