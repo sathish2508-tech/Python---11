@@ -1,0 +1,12 @@
+N = int(input())
+sum = 0
+for i in range(N):
+    A = int(input())
+    if A > 1:
+        prime = True 
+        for j in range(2, A):
+            if A % j == 0:
+                prime = False
+        if prime:
+            sum += A   
+print(sum)
