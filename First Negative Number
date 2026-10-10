@@ -1,0 +1,9 @@
+N = int(input())
+for i in range(N):
+    M = int(input())
+    Nagative = False
+    if M < 0:
+        Nagative = True
+        break
+if Nagative:
+    print(M)
