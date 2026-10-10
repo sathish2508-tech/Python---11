@@ -1,0 +1,16 @@
+N = int(input())
+for i in range(1, N + 1):
+    if i == N:
+        row = ""
+        for j in range(1, N + 1):
+            row += "* "
+    elif i == 1:
+        row = ""
+        space = " " * (N-i)
+        row += space + "* "
+    else:
+        space = " " * (N-i)
+        hspace = " " * (2*(i)-4)
+        row = ""
+        row += space + "* " + hspace + "* "
+    print(row)
