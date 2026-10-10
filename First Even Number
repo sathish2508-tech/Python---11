@@ -1,0 +1,9 @@
+N = int(input())
+for i in range(N):
+    M = int(input())
+    even = False
+    if M%2 == 0:
+        even = True
+        break
+if even:
+    print(M)
