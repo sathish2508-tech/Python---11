@@ -1,0 +1,13 @@
+M = int(input())
+N = int(input())
+if M > N:
+    small = M 
+else:
+    small = N 
+i = small 
+while i >= 1:
+    if M % i == 0:
+        if N % i == 0:
+            print(i)
+            break
+    i -= 1 
