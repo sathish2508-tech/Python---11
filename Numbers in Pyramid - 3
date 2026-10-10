@@ -1,0 +1,6 @@
+N = int(input())
+for i in range(1, N + 1):
+    space = (N-i)
+    row = (2*(i)-1)
+    for j in range(1):
+        print("0 " * space + "1 " * row + "0 " *  space)
