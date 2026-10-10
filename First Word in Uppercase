@@ -1,0 +1,11 @@
+sentance = input()
+first_word_index = 0
+for char in sentance:
+    if char == " ":
+        break
+    else:
+        first_word_index += 1 
+first_word = sentance[:first_word_index]
+uppercase = first_word.upper()
+full_sentance = uppercase + sentance[first_word_index:]
+print(full_sentance)
