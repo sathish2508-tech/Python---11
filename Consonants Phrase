@@ -1,0 +1,8 @@
+sentaince = input()
+vowels = "AEIOUaeiou"
+without_vowel = ""
+for char in sentaince:
+    for char in vowels:
+        continue
+    without_vowel += 1 
+print(without_vowel)
