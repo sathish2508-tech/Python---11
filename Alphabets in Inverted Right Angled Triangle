@@ -1,0 +1,6 @@
+N = int(input())
+M = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+for i in range(N):
+    for j in range(N-i):
+        print(M[j] ,end =" ")
+    print()
